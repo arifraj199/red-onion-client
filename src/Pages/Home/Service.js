@@ -1,6 +1,8 @@
 import React from "react";
 import { AiFillCar } from "react-icons/ai";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { BiBell } from "react-icons/bi";
+import { FaShuttleVan } from "react-icons/fa";
 
 const Service = () => {
   return (
@@ -22,7 +24,7 @@ const Service = () => {
           />
           <div className="flex p-6">
             <div className="mt-1">
-              <AiFillCar className="bg-red-500 p-1 text-white rounded-full text-xl "></AiFillCar>
+              <AiFillCar className="bg-red-600 p-1 text-white rounded-full text-xl "></AiFillCar>
             </div>
             <div className="ml-3">
               <h3 className="text-lg font-semibold">Fast Delivery</h3>
@@ -46,7 +48,7 @@ const Service = () => {
           />
           <div className="flex p-6">
             <div className="mt-1">
-              <AiFillCar className="bg-red-500 p-1 text-white rounded-full text-xl "></AiFillCar>
+              <BiBell className="bg-red-600 p-1 text-white rounded-full text-xl "></BiBell>
             </div>
             <div className="ml-3">
               <h3 className="text-lg font-semibold">A Good Auto Responder</h3>
@@ -70,7 +72,7 @@ const Service = () => {
           />
           <div className="flex p-6">
             <div className="mt-1">
-              <AiFillCar className="bg-red-500 p-1 text-white rounded-full text-xl "></AiFillCar>
+              <FaShuttleVan className="bg-red-600 p-1 text-white rounded-full text-xl "></FaShuttleVan>
             </div>
             <div className="ml-3">
               <h3 className="text-lg font-semibold">Home Delivery</h3>
