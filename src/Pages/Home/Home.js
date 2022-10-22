@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 import Service from "./Service";
 
 const Home = () => {
@@ -28,6 +29,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="my-6">
+        <Link className="font-semibold" to='/'>Breakfast</Link>
+        <Link className="mx-6 font-semibold" to='/lunch'>Lunch</Link>
+        <Link className="font-semibold" to='/dinner'>Dinner</Link>
+      </div>
+      <Outlet></Outlet>
       <Service></Service>
     </div>
   );
