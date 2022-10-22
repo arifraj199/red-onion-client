@@ -1,8 +1,12 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import Service from "./Service";
 
 const Home = () => {
+  let activeStyle = {
+    textDecoration: "underline",
+    color:"red",
+  };
   return (
     <div>
       <div
@@ -29,12 +33,39 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="my-6">
-        <Link className="font-semibold" to='/'>Breakfast</Link>
-        <Link className="mx-6 font-semibold" to='/lunch'>Lunch</Link>
-        <Link className="font-semibold" to='/dinner'>Dinner</Link>
+
+      <div className="my-12">
+        <NavLink
+          className="font-semibold"
+          to="/breakfast"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          Breakfast
+        </NavLink>
+
+        <NavLink
+          className="font-semibold mx-12"
+          to="/lunch"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          Lunch
+        </NavLink>
+
+        <NavLink
+          className="font-semibold"
+          to="/dinner"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          Dinner
+        </NavLink>
       </div>
+
       <Outlet></Outlet>
+      <div className="mt-16">
+        <button className="btn btn-sm capitalize border-none rounded-none bg-red-700 hover:bg-red-800">
+          Cheakout Your Food
+        </button>
+      </div>
       <Service></Service>
     </div>
   );
