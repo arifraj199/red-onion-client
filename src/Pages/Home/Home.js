@@ -5,7 +5,7 @@ import Service from "./Service";
 const Home = () => {
   let activeStyle = {
     textDecoration: "underline",
-    color:"red",
+    color: "red",
   };
   return (
     <div>
@@ -61,11 +61,6 @@ const Home = () => {
       </div>
 
       <Outlet></Outlet>
-      <div className="mt-16">
-        <button className="btn btn-sm capitalize border-none rounded-none bg-red-700 hover:bg-red-800">
-          Cheakout Your Food
-        </button>
-      </div>
       <Service></Service>
     </div>
   );
