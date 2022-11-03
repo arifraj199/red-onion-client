@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Breakfast from "./Pages/Food/Breakfast/Breakfast";
+import CheckOutItems from "./Pages/Food/CheckOutItems/CheckOutItems";
 import Dinner from "./Pages/Food/Dinner/Dinner";
 import Lunch from "./Pages/Food/Lunch/Lunch";
 import Home from "./Pages/Home/Home";
@@ -19,6 +20,7 @@ function App() {
           <Route path="lunch" element={<Lunch></Lunch>}></Route>
           <Route path="dinner" element={<Dinner></Dinner>}></Route>
         </Route>
+        <Route path="/checkoutitems/:id" element={<CheckOutItems></CheckOutItems>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

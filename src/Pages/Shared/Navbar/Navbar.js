@@ -7,9 +7,9 @@ const Navbar = () => {
     <div className="px-12">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
-          <a className="btn btn-ghost normal-case text-xl">
+          <Link to='/' className="btn btn-ghost normal-case text-xl">
             <img width='160' src="https://i.ibb.co/8sVs4nV/logo2.png" alt="" />
-          </a>
+          </Link >
         </div>
         <div className="navbar-end ">
             <Link to='/'>
